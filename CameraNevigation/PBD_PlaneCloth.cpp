@@ -6,18 +6,18 @@
 #include <cmath>
 using namespace std;
 //#define BEND_DIHEDRAL_ANGLE 
-#define SELF_COLLISION 0
+#define SELF_COLLISION 1
 //Collision Method
 #define PROJECTED_GRADIENT_DESCENT 0
 #define FRANK_WOLFE 1
 //천 Init 형태
-#define INIT_HORIZONTAL_CLOTH 1
-#define INIT_VERTICAL_CLOTH 0
+#define INIT_HORIZONTAL_CLOTH 0
+#define INIT_VERTICAL_CLOTH 1
 
 //sdf calculate
 //#define SPHERE 
-#define PLANE
-//#define BOX
+//#define PLANE
+#define BOX
 
 Hash* _hash;
 
@@ -232,7 +232,7 @@ void PBD_PlaneCloth::integrate(double dt)
 	for (int i = 0; i < _res[1]; i++) {
 		for (int j = 0; j < _res[0]; j++) {
 			int index = j * _res[0] + i;
-
+	
 			////회전
 			//if ((i == _res[1] - 1 && j == 0) || (i == _res[1] - 1 && j == _res[0] - 1) || (i == 0 && j == _res[0] - 1) || (i == 0 && j == 0))
 			//{
@@ -250,10 +250,10 @@ void PBD_PlaneCloth::integrate(double dt)
 			
 			_vel[index] = (_pos1[index] - _pos[index]) / dt;
 
-			//double v = sqrt(_vel[index].lengthSquared()); //최대 속도 제한
-			//double maxV = thickness / dt;
-			//if (v > maxV)
-			//	_vel[index] *= (maxV / v);
+			double v = sqrt(_vel[index].lengthSquared()); //최대 속도 제한
+			double maxV = thickness / dt;
+			if (v > maxV)
+				_vel[index] *= (maxV / v);
 
 			_pos[index] = _pos1[index];
 			//_pos[index] += _vel[index] * dt;
@@ -284,18 +284,18 @@ void PBD_PlaneCloth::simulation(double dt, int numSubStep)
 		updateBendSprings();
 #if SELF_COLLISION
 		//updatePPSelfCollision(subDt);
-		//updatePTSelfCollision(subDt);
-		updateEESelfCollision(subDt);
+		updatePTSelfCollision(subDt);
+		//updateEESelfCollision(subDt);
 #endif
 
-		double magSum = 0;
-		for (int i = 0; i < _res[1]; i++) {
-			for (int j = 0; j < _res[0]; j++) {
-				int index = j * _res[0] + i;
+		//double magSum = 0;
+		//for (int i = 0; i < _res[1]; i++) {
+		//	for (int j = 0; j < _res[0]; j++) {
+		//		int index = j * _res[0] + i;
 
-				magSum += (_pos[index] - _pos1[index]).getNorm();
-			}
-		}
+		//		magSum += (_pos[index] - _pos1[index]).getNorm();
+		//	}
+		//}
 		//printf("%f\n", magSum / (_res[1] * _res[0]));
 
 		integrate(subDt);
@@ -833,19 +833,19 @@ void PBD_PlaneCloth::updatePTSelfCollision(double dt)
 			vec3 dP1 = gP1 * scale * (-1);
 			vec3 dP2 = gP2 * scale * (-1);
 
-			double damping = 0.9;
+			double damping = 1;
 			_pos1[index] += dP * damping;
 			_pos1[index0] += dP0 * damping;
 			_pos1[index1] += dP1 * damping;
 			_pos1[index2] += dP2 * damping;
 
-			/*//단순 0.5씩 이동
-			vec3 cor = n * (thickness - distance);
-			double damping = 1;
-			_pos1[index] += cor * 0.5 * damping;
-			_pos1[index0] += -cor * 0.5 * damping;
-			_pos1[index1] += -cor * 0.5 * damping;
-			_pos1[index2] += -cor * 0.5 * damping;*/
+			////단순 0.5씩 이동
+			//vec3 cor = n * (thickness - distance);
+			//double damping = 1;
+			//_pos1[index] += cor * 0.5 * damping;
+			//_pos1[index0] += -cor * 0.5 * damping;
+			//_pos1[index1] += -cor * 0.5 * damping;
+			//_pos1[index2] += -cor * 0.5 * damping;
 		}
 	}
 

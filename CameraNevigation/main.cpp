@@ -4,8 +4,8 @@
 #include "PBD_PlaneCloth.h"
 #include <ctime>
 
-int width = 600;
-int height = 600;
+int width = 800;
+int height = 800;
 float zoom = 15.0f;
 float rotx = 0;
 float roty = 0.001f;
@@ -13,10 +13,10 @@ float tx = 0;
 float ty = 0;
 int lastx = 0;
 int lasty = 0;
-int numSubStep = 10; //self Collision
+int numSubStep = 5; //self Collision
 double spacing = 0.04;
 double thickness = 0.04;
-double dt = 0.01;
+double dt = 0.02;
 unsigned char Buttons[3] = { 0 };
 bool simulation = false;
 int mode = 0;
@@ -90,7 +90,7 @@ void Update(void)
 
 void Display(void)
 {
-	glClearColor(0.5f, 0.5, 0.5, 1.0f);
+	glClearColor(1.0f, 1.0, 1.0, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
 
@@ -185,7 +185,7 @@ void Keyboard(unsigned char key, int x, int y)
 		break;
 	case 'f':
 	case 'F':
-		_pbd->applyWind(Vec3<double>(-0.25, 0.9, -0.25));
+		_pbd->applyWind(Vec3<double>(-0.1, 0.45, -0.1));
 		break;
 	case '1':
 		mode = 1;
