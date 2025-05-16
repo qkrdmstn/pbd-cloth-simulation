@@ -1,3 +1,14 @@
+# 📑 목차
+- [🧾 프로젝트 개요](#-프로젝트-개요)
+- [📆 개발 인원 및 기간](#-개발-인원-및-기간)
+- [🛠️ 주요 기능](#️-주요-기능)
+- [💻 사용 기술](#-사용-기술)
+- [📷 시연 영상](#-시연-영상)
+- [🏆 프로젝트 성과](#-프로젝트-성과)
+- [💡 프로젝트 회고](#-프로젝트-회고)
+- [🔖 관련 블로그 글](#-관련-블로그-글)
+- [📚 참고 자료](#-참고-자료)
+
 # 🧾 프로젝트 개요
 이 프로젝트는 Position-Based Dynamics(PBD) 기법을 활용한 실시간 옷감(Cloth) 시뮬레이션입니다.  
 
@@ -21,14 +32,15 @@ OpenGL을 사용하여 직접 시뮬레이션을 구현했으며, 충돌 처리 
 
 
 # 💻 사용 기술
-- 언어: C/C++
-- 라이브러리: OpenGL
-- 주요 알고리즘 및 개념:
-  - Position Based Dynamics
+- **개발 언어**: C, C++
+- **그래픽 API**: OpenGL
+- **시뮬레이션 기법**:
+  - Position-Based Dynamics (PBD)
   - Self-Collision
+  - Collision Detection & Response
   - Spatial Hashing
   - Signed Distance Field (SDF)
-  - Collision Response / Detection
+
 
 
 # 📷 시연 영상
