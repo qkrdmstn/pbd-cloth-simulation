@@ -6,7 +6,8 @@ OpenGL을 사용하여 직접 시뮬레이션을 구현했으며, 충돌 처리 
 
 
 
-# 📆 개발 기간
+# 📆 개발 인원 및 기간
+- 1인 개발
 - 2023년 6월 ~ 2024년 1월 (약 8개월)
 
 
@@ -38,13 +39,13 @@ OpenGL을 사용하여 직접 시뮬레이션을 구현했으며, 충돌 처리 
   <img src="https://github.com/user-attachments/assets/9dc210b0-02c6-498a-8291-258b876346b7" width="45%">
 </p>
 
-[📺 시연 영상 링크 (Youtube)](https://www.youtube.com/playlist?list=PLL7N-Nw3U-P1VskT4llhvH_EJs00NhZ-c)
+[🔗 시연 영상 링크 (Youtube)](https://www.youtube.com/playlist?list=PLL7N-Nw3U-P1VskT4llhvH_EJs00NhZ-c)
 
 # 🏆 프로젝트 성과
 본 프로젝트를 바탕으로 2024 한국컴퓨터정보학회 동계 학술대회에 참가하였습니다.
 
 논문 제목: 옷감-고체 충돌에서 떨림 문제를 줄이기 위한 효율적인 SDF 기반 접근 방식
-
+[🔗 논문 링크(DBpia)](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11711777)
 
 
 
@@ -57,7 +58,7 @@ OpenGL을 사용하여 직접 시뮬레이션을 구현했으며, 충돌 처리 
 
 
 # 🔖 관련 블로그 글
-- [📝 자세한 구현 및 학습 과정 정리 (Tistory)](https://coding-l7.tistory.com/category/%EB%AC%BC%EB%A6%AC%20%EA%B8%B0%EB%B0%98%20%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/Cloth%20Simulation)
+- [🔗 자세한 구현 및 학습 과정 정리 (Tistory)](https://coding-l7.tistory.com/category/%EB%AC%BC%EB%A6%AC%20%EA%B8%B0%EB%B0%98%20%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/Cloth%20Simulation)
 
   
 # 📚 참고 자료
