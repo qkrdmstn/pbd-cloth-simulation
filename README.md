@@ -1,8 +1,9 @@
 # 🧾 프로젝트 개요
 이 프로젝트는 Position-Based Dynamics(PBD) 기법을 활용한 실시간 옷감(Cloth) 시뮬레이션입니다.  
+
 OpenGL을 사용하여 직접 시뮬레이션을 구현했으며, 충돌 처리 및 자기 충돌(self-collision) 등의 기능을 추가하여 천의 자연스러운 움직임을 표현했습니다.  
 
-본 프로젝트는 게임 개발과 그래픽스 응용에서 자주 사용되는 핵심 기술들을 심도 있게 학습하고자 진행되었습니다.
+본 프로젝트는 게임 개발과 그래픽스 분야에서 자주 활용되는 핵심 기술들을 심층적으로 이해하고 직접 구현하기 위해 진행되었습니다.
 
 
 
@@ -22,13 +23,12 @@ OpenGL을 사용하여 직접 시뮬레이션을 구현했으며, 충돌 처리 
 # 💻 사용 기술
 - 언어: C/C++
 - 라이브러리: OpenGL
-- Position Based Dynamics
-- Self-Collision
-- Signed Distance Field (SDF)
-- Collision Response
-- Collision Detection
-
-
+- 주요 알고리즘 및 개념:
+  - Position Based Dynamics
+  - Self-Collision
+  - Spatial Hashing
+  - Signed Distance Field (SDF)
+  - Collision Response / Detection
 
 
 # 📷 시연 영상
@@ -42,9 +42,10 @@ OpenGL을 사용하여 직접 시뮬레이션을 구현했으며, 충돌 처리 
 [🔗 시연 영상 링크 (Youtube)](https://www.youtube.com/playlist?list=PLL7N-Nw3U-P1VskT4llhvH_EJs00NhZ-c)
 
 # 🏆 프로젝트 성과
-본 프로젝트를 바탕으로 2024 한국컴퓨터정보학회 동계 학술대회에 참가하였습니다.
+본 프로젝트를 바탕으로 **2024 한국컴퓨터정보학회 동계 학술대회**에 **제1저자 및 발표자**로 참가하였습니다.
 
 논문 제목: 옷감-고체 충돌에서 떨림 문제를 줄이기 위한 효율적인 SDF 기반 접근 방식
+
 [🔗 논문 링크(DBpia)](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11711777)
 
 
