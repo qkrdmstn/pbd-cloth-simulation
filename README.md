@@ -3,7 +3,7 @@
 - [📆 개발 인원 및 기간](#-개발-인원-및-기간)
 - [🛠️ 주요 기능](#️-주요-기능)
 - [💻 사용 기술](#-사용-기술)
-- [📷 시연 영상](#-시연-영상)
+- [📷 결과 영상](#-결과-영상)
 - [🏆 프로젝트 성과](#-프로젝트-성과)
 - [💡 프로젝트 회고](#-프로젝트-회고)
 - [🔖 관련 블로그 글](#-관련-블로그-글)
@@ -48,7 +48,7 @@
 
 <br>
 
-## 📷 시연 영상
+## 📷 결과 영상
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d5d32641-b39b-4eab-a043-562b6b4733d0" width="45%">
   <img src="https://github.com/user-attachments/assets/1067f577-b406-459e-b1f0-2a61fac2f832" width="45%"><br>
@@ -56,7 +56,7 @@
   <img src="https://github.com/user-attachments/assets/9dc210b0-02c6-498a-8291-258b876346b7" width="45%">
 </p>
 
-[🔗 시연 영상 링크 (Youtube)](https://www.youtube.com/playlist?list=PLL7N-Nw3U-P1VskT4llhvH_EJs00NhZ-c)
+[🔗 결과 영상 링크 (Youtube)](https://www.youtube.com/playlist?list=PLL7N-Nw3U-P1VskT4llhvH_EJs00NhZ-c)
 
 <br>
 
