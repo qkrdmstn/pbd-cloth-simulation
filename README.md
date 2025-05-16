@@ -1,4 +1,4 @@
-# 천 시뮬레이션 (Cloth Simulation)
+# 📌 천 시뮬레이션 (Cloth Simulation)
 Position-Based Dynamics 기반으로 구현한 실시간 천 시뮬레이션 프로젝트입니다.
 
 
@@ -10,11 +10,11 @@ OpenGL과 GLSL을 사용하여 그래픽스 파이프라인에 직접 접근하�
 본 프로젝트는 물리 기반 시뮬레이션에 대해 학습하고, 실제 게임 개발이나 그래픽스 응용에 활용 가능한 기술력을 기르기 위해 제작되었습니다.
 
 
-# 주요 기능
+# 🛠️ 주요 기능
 - 천 시뮬레이션
 - 충돌 처리
   
-# 사용 기술
+# 💻 사용 기술
 - 언어: C/C++
 - 라이브러리: OpenGL
 - Position Based Dynamics
@@ -24,7 +24,7 @@ OpenGL과 GLSL을 사용하여 그래픽스 파이프라인에 직접 접근하�
 - Collision Detection
 - K-D tree
 
-# 시연
+# 📷 시연 영상
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d5d32641-b39b-4eab-a043-562b6b4733d0" width="45%">
   <img src="https://github.com/user-attachments/assets/1067f577-b406-459e-b1f0-2a61fac2f832" width="45%"><br>
@@ -33,7 +33,7 @@ OpenGL과 GLSL을 사용하여 그래픽스 파이프라인에 직접 접근하�
 </p>
 
 
-참고 자료
+# 📚 참고 자료
 ### Position Based Dynamics
 
 - [Position Based Dynamics - Matthias Müller, Bruno Heidelberger, Marcus Hennix, John Ratcliff](https://matthias-research.github.io/pages/publications/posBasedDyn.pdf)
