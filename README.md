@@ -11,6 +11,18 @@
 
 <br>
 
+## 📷 결과 영상
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d5d32641-b39b-4eab-a043-562b6b4733d0" width="45%">
+  <img src="https://github.com/user-attachments/assets/1067f577-b406-459e-b1f0-2a61fac2f832" width="45%"><br>
+  <img src="https://github.com/user-attachments/assets/d2097e2b-128f-4d64-b414-85a646177ce7" width="45%">
+  <img src="https://github.com/user-attachments/assets/9dc210b0-02c6-498a-8291-258b876346b7" width="45%">
+</p>
+
+[🔗 결과 영상 링크 (Youtube)](https://www.youtube.com/playlist?list=PLL7N-Nw3U-P1VskT4llhvH_EJs00NhZ-c)
+
+<br>
+
 ## 🧾 프로젝트 개요
 - 이 프로젝트는 **Position-Based Dynamics(PBD) 기법**을 활용한 실시간 **옷감(Cloth) 시뮬레이션**입니다.  
 - OpenGL을 사용하여 직접 시뮬레이션을 구현했으며, **충돌 처리 및 자기 충돌(self-collision)** 등의 기능을 추가하여 천의 자연스러운 움직임을 표현했습니다.
@@ -45,18 +57,6 @@
 - Collision Detection & Response
 - Spatial Hashing
 - Signed Distance Field (SDF)
-
-<br>
-
-## 📷 결과 영상
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d5d32641-b39b-4eab-a043-562b6b4733d0" width="45%">
-  <img src="https://github.com/user-attachments/assets/1067f577-b406-459e-b1f0-2a61fac2f832" width="45%"><br>
-  <img src="https://github.com/user-attachments/assets/d2097e2b-128f-4d64-b414-85a646177ce7" width="45%">
-  <img src="https://github.com/user-attachments/assets/9dc210b0-02c6-498a-8291-258b876346b7" width="45%">
-</p>
-
-[🔗 결과 영상 링크 (Youtube)](https://www.youtube.com/playlist?list=PLL7N-Nw3U-P1VskT4llhvH_EJs00NhZ-c)
 
 <br>
 
